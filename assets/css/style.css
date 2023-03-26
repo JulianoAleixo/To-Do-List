@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #3c1053;
+    --secondary-color: #ad5389;
+    --gradient: linear-gradient(to right, #ad5389, #3c1053);
+    --white-gradient: linear-gradient(45deg, #dfe9f3, #ffffff);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gradient);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 10px 5px 5px #000;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p input {
+    font-size: 24px;
+    height: 3rem;
+    padding: 0 20px;
+    margin-right: 20px;
+}
+
+p input:focus {
+    background: var(--white-gradient);
+}
+
+p button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 25px;
+    background: var(--primary-color);
+    color:#fff;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 180ms ease-in-out;
+}
+
+p button:hover {
+    background: var(--secondary-color);
+}
+
+.tarefas {
+    font-size: 1.8rem;
+}
+
+.tarefas li {
+    padding-top: 15px;
+}
+
+.tarefas li button {
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    color:#990f02;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    padding-top: 5px;
+    margin-left: 30px;
+    transition: all 180ms ease-in-out;
+}
+
+.tarefas li button:hover {
+    background: #bc544b;
+}
+
+footer {
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    border-top: 3px dotted#fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
